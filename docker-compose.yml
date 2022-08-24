@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  app-store:
+    container_name: app-store
+    env_file:
+      - .env
+    build:
+      context: ./
+    image: app-store
+    ports:
+      - "3000:3000"
